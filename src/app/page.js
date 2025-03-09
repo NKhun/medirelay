@@ -1,101 +1,20 @@
-import Image from "next/image";
+import Link from "next/link";
+import Navbar from "../components/navbar_home";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="w-screen h-screen overflow-x-hidden">
+      <Navbar/>
+      <div className="flex items-center justify-center h-[calc(100vh-74px)] w-screen mt-[74px]">
+        <div className="flex flex-col items-center justify-center w-[80%] h-[80%] rounded-2xl shadow-2xl shadow-red-300 bg-[#fdfdfd] text-black border-3 border-red-200/50">
+          <h1 className="text-[8em] text-center font-bold text-red-800">Medirelay</h1>
+          <p className="text-[1em] w-[70%] text-center text-gray-800">Medirelay เป็นแพลตฟอร์มที่ช่วยให้โรงพยาบาลได้รับข้อมูลผู้ป่วยฉุกเฉินล่วงหน้าจากหน่วยฉุกเฉิน (EMS) แบบเรียลไทม์ ผ่าน
+            แพลตฟอร์มที่ช่วยให้โรงพยาบาลได้รับข้อมูลผู้ป่วยฉุกเฉินล่วงหน้าจากหน่วยฉุกเฉิน EMS แบบเรียลไทม์ ผ่าน
+            ระบบดิจิทัล ช่วยให้แพทย์สามารถเตรียมตัวได้อย่างรวดเร็ว ลดความล่าช้าในการรักษา และเพิ่มโอกาสรอดชีวิตของผู้ป่วย 
+            โดยเฉพาะในกรณีที่ต้องการการช่วยเหลือภายใน Golden Time</p>
+          <Link href="/signup" className="text-[1.3em] px-[15px] py-[5px] rounded-lg bg-red-800 hover:bg-red-700 shadow-red-300/40 hover:shadow-red-300/80 hover:scale-103 text-white font-medium shadow-lg duration-300 ease-in-out mt-6">สมัครเลย</Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }

@@ -21,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 **หมายเหตุ uiนี้ยังไม่ใช่ final อาจมีการปรับเปลี่ยนตามเหมาะสมในอนาคต**  
 /               หน้าหลัก  
-/dashboard      หน้าแดชบอร์ด vital sign ต่างๆ และpush to talk รวมถึง  eta
+/dashboard      หน้าแดชบอร์ด vital sign ต่างๆ และpush to talk รวมถึง  eta  
 /signin         หน้าเข้าสู่ระบบ  
 /find_hospital  หน้าในขณะที่ค้นหาโรงพยาบาลที่ใกล้ที่สุด  
 /ems_home       หน้าหลักของฝั่งEmergency medical service  

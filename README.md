@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## หน้า Mock up ที่ใช้ได้ในปัจจุบัน
 
-**หมายเหตุ uiนี้ยังไม่ใช่ final อาจมีการปรับเปลี่ยนตามเหมาะสมในอนาคต**
+**หมายเหตุ uiนี้ยังไม่ใช่ final อาจมีการปรับเปลี่ยนตามเหมาะสมในอนาคต**  
 /               หน้าหลัก  
 /dashboard      หน้าแดชบอร์ด vital sign ต่างๆ และpush to talk รวมถึง  eta
 /signin         หน้าเข้าสู่ระบบ  
